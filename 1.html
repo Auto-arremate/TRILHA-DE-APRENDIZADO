@@ -287,11 +287,11 @@
         html[data-theme='dark'] .playbook-sub-section { background-color: var(--bg-auto-arremate-dark); color: var(--text-body-dark-portal); }
 
         /* Fundo e texto dinâmicos para subseções */
-        #pista-decolagem-section, #auto-arremate-content-section, #mapeando-campeoes-section, #arte-comunicacao-section, #dicionario-mestres-section, #evolucao-continua-section, #central-comando-section {
+        #pista-decolagem-section, #auto-arremate-content-section, #mapeando-campeoes-section, #arte-comunicacao-section, #dicionario-mestres-section, #evolucao-continua-section, #central-comando-section, #jornada-cliente-section, #aceleracao-tatica-total-section {
             background-color: var(--bg-auto-arremate-light);
             color: var(--text-body-light-portal);
         }
-        html[data-theme='dark'] #pista-decolagem-section, html[data-theme='dark'] #auto-arremate-content-section, html[data-theme='dark'] #mapeando-campeoes-section, html[data-theme='dark'] #arte-comunicacao-section, html[data-theme='dark'] #dicionario-mestres-section, html[data-theme='dark'] #evolucao-continua-section, html[data-theme='dark'] #central-comando-section {
+        html[data-theme='dark'] #pista-decolagem-section, html[data-theme='dark'] #auto-arremate-content-section, html[data-theme='dark'] #mapeando-campeoes-section, html[data-theme='dark'] #arte-comunicacao-section, html[data-theme='dark'] #dicionario-mestres-section, html[data-theme='dark'] #evolucao-continua-section, html[data-theme='dark'] #central-comando-section, html[data-theme='dark'] #jornada-cliente-section, html[data-theme='dark'] #aceleracao-tatica-total-section {
             background-color: var(--bg-auto-arremate-dark);
             color: var(--text-body-dark-portal);
         }
@@ -799,6 +799,7 @@
                  <a href="tel:01640421197" aria-label="Telefone Auto Arremate"><i class="fas fa-phone"></i></a>
             </div>
         </section>
+
 
         <section id="menu-principal-section" class="menu-principal-section hidden" data-aos="fade-in">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1494,6 +1495,25 @@
         </section>
 
 
+        <section id="jornada-cliente-section" class="playbook-sub-section hidden">
+            <div class="container mx-auto">
+                <button class="btn-voltar-secao backToManualPitStopDetalhesBtn mb-8 text-sm">
+                    <i class="fas fa-arrow-left mr-2"></i> VOLTAR AO MANUAL
+                </button>
+                <iframe src="5 - JORNADA DO CLIENTE.html" class="w-full h-[80vh] border rounded-md"></iframe>
+            </div>
+        </section>
+
+        <section id="aceleracao-tatica-total-section" class="playbook-sub-section hidden">
+            <div class="container mx-auto">
+                <button class="btn-voltar-secao backToManualPitStopDetalhesBtn mb-8 text-sm">
+                    <i class="fas fa-arrow-left mr-2"></i> VOLTAR AO MANUAL
+                </button>
+                <iframe src="6 - ACELERAÇÃO TATICA TOTAL.html" class="w-full h-[80vh] border rounded-md"></iframe>
+            </div>
+        </section>
+
+
         <section id="placeholder-content-section" class="playbook-sub-section hidden">
              <div class="container mx-auto">
                 <button class="btn-voltar-secao backToManualPitStopDetalhesBtn mb-8 text-sm">
@@ -1522,6 +1542,8 @@
             const menuPrincipalSection = document.getElementById('menu-principal-section');
             const manualPitstopDetalhesSection = document.getElementById('manual-pitstop-detalhes-section');
             const arremaqContentSection = document.getElementById('arremaq-content-section');
+            const jornadaClienteSection = document.getElementById('jornada-cliente-section');
+            const aceleracaoTaticaTotalSection = document.getElementById('aceleracao-tatica-total-section');
             const placeholderContentSection = document.getElementById('placeholder-content-section');
 
 
@@ -1594,8 +1616,8 @@
                 { emoji: "<span class='emoji-autoarremate-color'>🚗</span>", title: "<strong>AUTO ARREMATE NA POLE POSITION</strong>: DOMINANDO O UNIVERSO DOS VEÍCULOS LEVES!", sub: "Descubra como nossa plataforma acelera a gestão e venda de veículos leves, da captação à comercialização.", sentenceEmoji: "🏆", contentId: "auto-arremate-content-section" },
                 { emoji: "<span class='emoji-arremaq-color'>🚜</span>", title: "<strong>ARREMAQ</strong>: A FORÇA BRUTA DOS GIGANTES DO AGRO E CONSTRUÇÃO!", sub: "Soluções de peso e estratégias robustas para o repasse eficiente de máquinas agrícolas e de construção.", sentenceEmoji: "⚙️", contentId: "arremaq-content-section" },
                 { emoji: "🎯", title: "<strong>MAPEANDO OS CAMPEÕES</strong>: NOSSOS CLIENTES IDEAIS (ICPS & PERSONAS)!", sub: "Identifique os perfis de clientes com maior potencial e as personas chave para uma abordagem estratégica.", sentenceEmoji: "🌟", contentId: "mapeando-campeoes-section" },
-                { emoji: "📊", title: "<strong>A JORNADA DO CLIENTE VENCEDOR</strong>: DA PROSPECÇÃO À BANDEIRADA FINAL!", sub: "Visualize a transformação do cliente, da necessidade à solução, através de nossa animação dinâmica.", sentenceEmoji: "🎬", contentId: "placeholder-content-section" },
-                { emoji: "🚀", title: "<strong>ACELERAÇÃO TÁTICA TOTAL</strong>", sub: "Seu centro de comando para conectar, qualificar e converter. Todas as estratégias, para todas as personas, em um só lugar.", sentenceEmoji: "✨", contentId: "placeholder-content-section" },
+                { emoji: "📊", title: "<strong>A JORNADA DO CLIENTE VENCEDOR</strong>: DA PROSPECÇÃO À BANDEIRADA FINAL!", sub: "Visualize a transformação do cliente, da necessidade à solução, através de nossa animação dinâmica.", sentenceEmoji: "🎬", contentId: "jornada-cliente-section" },
+                { emoji: "🚀", title: "<strong>ACELERAÇÃO TÁTICA TOTAL</strong>", sub: "Seu centro de comando para conectar, qualificar e converter. Todas as estratégias, para todas as personas, em um só lugar.", sentenceEmoji: "✨", contentId: "aceleracao-tatica-total-section" },
                 { emoji: "✍️", title: "<strong>A ARTE DA COMUNICAÇÃO ESTRATÉGICA</strong>: MODELOS QUE CONVERTEM!", sub: "Termos de impacto, orientações e exemplos práticos para uma comunicação persuasiva e eficaz.", sentenceEmoji: "🗣️", contentId: "arte-comunicacao-section" },
                 { emoji: "📖", title: "<strong>DICIONÁRIO DOS MESTRES</strong>: GLOSSÁRIO AUTO ARREMATE & ARREMAQ!", sub: "Decifre os termos técnicos e jargões do mercado para dominar a linguagem do setor.", sentenceEmoji: "📚", contentId: "dicionario-mestres-section" },
                 { emoji: "📈", title: "<strong>EVOLUÇÃO CONTÍNUA</strong>: NOSSO PLAYBOOK EM CONSTANTE APERFEIÇOAMENTO!", sub: "Os próximos passos para o desenvolvimento do playbook e o crescimento contínuo da nossa equipe.", sentenceEmoji: "🌌", contentId: "evolucao-continua-section" },
